@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:space_pod/pages/home_page.dart';
 
-void main() => runApp(new MyApp());
+void main() => runApp( const MyApp());
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -9,7 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: HomePage(),
+      home:const HomePage(),
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
         scaffoldBackgroundColor: Colors.grey.shade900,
