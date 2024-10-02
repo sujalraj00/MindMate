@@ -1,6 +1,6 @@
-# space_pod
+# MindMate
 
-A new Flutter project.
+an AI-powered chatbot or virtual assistant that leverages Gemini's natural language understanding and empathy to provide mental health and emotional support to students.
 
 ## Getting Started
 
