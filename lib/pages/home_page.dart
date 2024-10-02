@@ -28,9 +28,9 @@ class _HomePageState extends State<HomePage> {
             return Container(
             width: double.maxFinite,
             height: double.maxFinite,
-            decoration: const BoxDecoration(
-              image: DecorationImage(opacity: 0.1, image: AssetImage("assets/space_bg2.jpeg"), fit: BoxFit.cover),
-            ),
+            // decoration: const BoxDecoration(
+            //   image: DecorationImage(opacity: 0.1, image: AssetImage("assets/space_bg2.jpeg"), fit: BoxFit.cover),
+            // ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -41,12 +41,12 @@ class _HomePageState extends State<HomePage> {
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Space Pod',
+                      Text('Mental Health Helper',
                           style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 24)),
+                              fontWeight: FontWeight.w900, fontSize: 20, fontFamily: 'Poppins-Bold', color: Colors.black45 )),
                       Icon(
-                        Icons.image_search,
-                        color: Colors.white,
+                        Icons.medical_services,
+                        color: Colors.black,
                       )
                     ],
                   ),
@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                       children: [
                         Text(messages[index].role =="user" 
                         ? "User"
-                        : "Space Pod",
+                        : "Ai",
                         style: TextStyle(
                           fontSize: 14, 
                           color: 
@@ -73,7 +73,7 @@ class _HomePageState extends State<HomePage> {
                         ? Colors.amber
                         : Colors.purple.shade200
                         ),),
-                        Text(messages[index].parts.first.text, style: TextStyle(height: 1.2),),
+                        Text(messages[index].parts.first.text, style: TextStyle(height: 1.2, color: Colors.black),),
                       ],
                     ));
                 })),
