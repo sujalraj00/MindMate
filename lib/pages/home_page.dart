@@ -35,13 +35,14 @@ class _HomePageState extends State<HomePage> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
                   height: 100,
                   child: const Row(
+        
                     crossAxisAlignment: CrossAxisAlignment.end,
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Text('Mental Health Helper',
+                      Text('MindMate',
                           style: TextStyle(
                               fontWeight: FontWeight.w900, fontSize: 20, fontFamily: 'Poppins-Bold', color: Colors.black45 )),
                       Icon(
@@ -50,6 +51,8 @@ class _HomePageState extends State<HomePage> {
                       )
                     ],
                   ),
+                ),
+                Divider( thickness: 1.5, indent: 60, endIndent: 60, 
                 ),
                 Expanded(child: ListView.builder(
                   itemCount: messages.length,
